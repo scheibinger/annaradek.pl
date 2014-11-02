@@ -6176,3 +6176,12 @@ button.close {
    Base Stylesheet
    base.less
    ========================================================================== */
+div.hero {
+  background: no-repeat #8fbac6;
+  width: 100%;
+}
+div.hero .container {
+  background: url(../images/zaproszenie.png) no-repeat;
+  margin: auto;
+  height: 500px;
+}
