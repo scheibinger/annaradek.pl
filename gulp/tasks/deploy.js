@@ -1,4 +1,5 @@
 var deploy = require("gulp-gh-pages");
+var gulp = require('gulp');
 
 /**
  * Push build to gh-pages
