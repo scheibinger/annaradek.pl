@@ -1,0 +1,21 @@
+@media screen and (min-width:960px){
+	#foto {
+		height:400px;
+	}
+	
+	
+@media screen and (min-width:660px){
+	.church {
+	position:left;
+	}
+	
+@media screen and (max-width:660px){
+	#church {
+		text-align:left;
+	}
+	
+}
+
+@media screen and (min-width:){
+
+}

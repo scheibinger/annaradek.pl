@@ -4,10 +4,12 @@ var config = require('../config');
 var gulp = require('gulp');
 
 // Connect
-gulp.task('connect', function () {
+gulp.task('connect', function() {
   var connect = require('connect');
   var app = connect()
-    .use(require('connect-livereload')({ port: config.livereloadPort }))
+    .use(require('connect-livereload')({
+      port: config.livereloadPort
+    }))
     .use('/', connect.static('.tmp'))
     .use('/', connect.static('app'))
     // paths to bower_components should be relative to the current file
@@ -17,11 +19,12 @@ gulp.task('connect', function () {
 
   require('http').createServer(app)
     .listen(config.port)
-    .on('listening', function () {
-      console.log('Started connect web server on http://localhost:' + config.port);
+    .on('listening', function() {
+      console.log('Started connect web server on http://localhost:' +
+        config.port);
     });
 });
 
-gulp.task('serve', ['connect', 'styles'], function () {
+gulp.task('serve', ['connect', 'styles'], function() {
   require('opn')('http://localhost:' + config.port);
 });
