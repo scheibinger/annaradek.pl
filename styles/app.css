@@ -171,6 +171,9 @@ footer a,
 nav a {
   text-decoration: none;
 }
+footer a {
+  color: #ffffff;
+}
 footer a:visited {
   color: #ffffff;
 }
