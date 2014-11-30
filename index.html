@@ -1,65 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Theme Template for Bootstrap</title>
-
-  <!-- Bootstrap core CSS -->
-  <!-- <link href="../../dist/css/bootstrap.css" rel="stylesheet"> -->
-  <!-- Bootstrap theme -->
-  <!-- <link href="../../dist/css/bootstrap-theme.min.css" rel="stylesheet"> -->
-
-  <!-- Custom styles for this template -->
-  <link href="/styles/app.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Neuton' rel='stylesheet' type='text/css'>
-
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-  <![endif]-->
+  <title>Anna i Radosław | Ślub </title>
+  <link rel="stylesheet" href="main.css">
+  <link href='http://fonts.googleapis.com/css?family=Neuton:200' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lovers+Quarrel' rel='stylesheet' type='text/css'>
+  <script language="javascript" type="text/javascript"> today = new Date();
+  todayEpoch = today.getTime();
+  target = new Date("17 January, 2015");
+  targetEpoch = target.getTime();
+  daysLeft = Math.floor(((targetEpoch - todayEpoch) / (60 * 60 * 24)) / 1000); </script>
 </head>
 
 <body>
+<header>
+  <nav>
+    <ul id="one">
+      <li><a href="index.html">Anna i Radoslaw</a></li>
+    </ul>
+    <ul id="two">
+      <li><a href="index.html#slub">Ślub</a></li>
+      <li><a href="index.html#wesele">Wesele</a></li>
+      <li><a href="dayinfo.html">Sprawy organizacyjne</a></li>
+<!--      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="blog.html">Blog</a></li>-->
+    </ul>
+  </nav>
+</header>
 
-<!-- Fixed navbar -->
-
-
-<div class="hero">
-  <div class="container">
-    <img src="images/zaproszenie.png">
+<div id="wrapper">
+  <div id="foto">
+    <img class="displayed" src="dusty29.png" alt='Anja i Radoslaw'/>
   </div>
 
-</div>
-<div class="container">
-    <p class="lead">17 stycznia 2015 odbędzie się nasze wesele. Więcej szczegółów zamieścimy na niniejszej stronie już wkrótce ...</p>
-  <h1>Miejsce</h1>
-  <h2>Ślub</h2>
-  <address>
-    <strong>Kościół Świętego Sebastiana</strong><br>
-    ul. Sebastiana 23,<br>
-    32-020 Wieliczka
-  </address>
-  <h2>Wesele</h2>
-  <address>
-    <strong>Folwark Zalesie - Sala Czeladna</strong><br>
-    Grajów 150,<br>
-    32-020 Wieliczka
-  </address>
-</div>
-<!-- /container -->
+  <div id="rsvp">
+    <p> Zapraszamy na ślub i wesele <span class="red">| Pozostało już tylko <script>document.write(daysLeft);</script> dni |</span>
+      <a href="https://docs.google.com/forms/d/1owqpsaJgQ2y7iNnTtrfFK4HJIT0RYUtw9RB8ULHdJc4/viewform?usp=send_form">Potwierdź swoje przybycie</a>
+    </p>
+  </div>
 
-<!--
-Scripts
-==================================================
-Placed at the end of the document so the pages load faster -->
-<!-- <script src="scripts/app.js"></script> -->
-<script src="scripts/vendor.js"></script>
-<script src="scripts/main.js"></script>
+
+  <div id="church">
+    <a name="slub"></a>
+    <img class="mass" src="heart.png" alt="Church information"/>
+    <ul>
+      <li><span class="drop">S</span>lub</li>
+      <li>Zapraszamy na nasz ślub, <br> który odbędzie się w kościele św. Sebstiana w Wieliczce</li>
+      <li>17 stycznia 2015 roku o godzinie 14:00</li>
+      <li>Jak dojechać: <a href="https://www.google.co.uk/maps/dir/Agroturystyczna+Folwark+Zalesie,+Grajów+150,+32-020+Wieliczka,
+          +Poland/Kościół+Świętego+Sebastiana,+Sebastiana+23,+32-020+Wieliczka,+Poland
+          /@49.9471226,20.0440157,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x4716402135ebce1d:
+          0xa62e9b091aa98579!2m2!1d20.103103!2d49.924006!1m5!1m1!1s0x4716417ae6b9e7ad:0x4d04c04c6b166de9!2m2!1d20.066017!2d49.978022"
+                          target="_blank">Mapa Dojazdu</a></li>
+    </ul>
+  </div>
+  <div id="wedding">
+
+    <a name="wesele"></a>
+    <img class="wedding" src="invite.png" alt="Informacja o weselu"/>
+    <p>
+      <span class="drop"> W</span>esele<br>
+       Po ślubie w kościele zapraszamy na przyjęcie weselne <br>
+        do <a href="http://www.folwarkzalesie.pl">Folwarku Zalesie w Grajowie.</a>
+       <br>Liczymy na towarzystwo Miłych Gości do białego rana.
+
+    </p>
+
+  </div>
+</div>
+
+<footer>
+  <img class="ball" src="ball.png" alt="decoration"/>
+
+  <p><a href="index.html">Strona główna</a> | <a href="dayinfo.html">Sprawy organizacyjne</a></p>
+  <img class="ball" src="ball3.png" alt="decoration"/>
+</footer>
+
+
 </body>
 </html>
