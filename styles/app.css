@@ -86,45 +86,61 @@ hr {
 }
 .mass {
   float: left;
-  margin-top: -90px;
   height: 406px;
   width: 341px;
   border: 1px solid #A9A9A9;
 }
 #church {
-  background-color: #8fbac6;
-  color: #ffffff;
   font-size: 24px;
   line-height: 160%;
   font-family: 'Neuton', serif;
   max-width: 100%;
-  padding: 90px 100px 80px 0px;
   overflow: hidden;
-  height: 237px;
 }
-#church li {
-  display: block;
-  padding-left: 500px;
+#church ul {
+  float: left;
+  margin: 3em;
+  position: relative;
 }
-#church a:link {
-  color: #ffffff;
+@media screen and (min-width: 1100px) {
+  #church ul {
+    left: 130px;
+  }
 }
-#church a:visited {
-  color: #ffffff;
+@media (max-width: 900px) {
+  #church img {
+    display: none;
+  }
 }
-#church a:hover {
-  color: #d52128;
-}
-#church a:active {
-  color: #d52128;
-}
-.drop {
+#church .drop {
   font-family: 'Lovers Quarrel';
   float: left;
   font-size: 8em;
   line-height: .98em;
   margin-right: 0.1em;
-  padding-bottom: 1em;
+  padding-bottom: 30px;
+}
+#church li {
+  display: block;
+}
+.dark-theme {
+  background-color: #8fbac6;
+  color: #fff;
+}
+.dark-theme a:visited {
+  color: #ffffff;
+}
+.dark-theme a:link {
+  color: #ffffff;
+}
+.dark-theme a:visited {
+  color: #ffffff;
+}
+.dark-theme a:hover {
+  color: #d52128;
+}
+.dark-theme a:active {
+  color: #d52128;
 }
 #wedding {
   background-color: #ffffff;
@@ -187,11 +203,23 @@ footer .ball {
   height: 25px;
 }
 /*info day page*/
-#info {
-  width: 75%;
+blockquote {
+  font-style: italic;
+  font-family: 'Neuton', serif;
+}
+body.info main {
+  width: 100%;
   margin: 0 auto;
   padding: 50px 20px;
-  color: #2c3942;
   font-family: 'Neuton', serif;
   word-spacing: 1px;
+}
+body.info main .text-container {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+body.info footer {
+  background-color: #fff;
+  color: #8fbac6;
 }
