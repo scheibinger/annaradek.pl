@@ -105,53 +105,72 @@ hr {
 
 .mass {
   float: left;
-  margin-top: -90px;
   height: 406px;
   width: 341px;
   border: 1px solid #A9A9A9;
 }
 
 #church {
-  background-color: #8fbac6;
-  color: #ffffff;
   font-size: 24px;
   line-height: 160%;
   font-family: 'Neuton', serif;
   max-width: 100%;
-  padding: 90px 100px 80px 0px;
   overflow: hidden;
-  height: 237px;
+
+  ul {
+    float: left;
+    margin: 3em;
+    position: relative;
+
+    @media screen and (min-width: 1100px) {
+      left: 130px;
+    }
+  }
+
+  img {
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  .drop {
+    font-family: 'Lovers Quarrel';
+    float: left;
+    font-size: 8em;
+    line-height: .98em;
+    margin-right: 0.1em;
+    padding-bottom: 30px;
+  }
+
+  li {
+    display: block;
+  }
 
 }
 
-#church li {
-  display: block;
-  padding-left: 500px;
-}
+.dark-theme {
+  background-color: @blueColor;
+  color: #fff;
 
-#church a:link {
-  color: #ffffff;
-}
+  a:visited {
+    color: #ffffff;
+  }
 
-#church a:visited {
-  color: #ffffff;
-}
+  a:link {
+    color: #ffffff;
+  }
 
-#church a:hover {
-  color: #d52128;
-}
+  a:visited {
+    color: #ffffff;
+  }
 
-#church a:active {
-  color: #d52128;
-}
+  a:hover {
+    color: #d52128;
+  }
 
-.drop {
-  font-family: 'Lovers Quarrel';
-  float: left;
-  font-size: 8em;
-  line-height: .98em;
-  margin-right: 0.1em;
-  padding-bottom: 1em;
+  a:active {
+    color: #d52128;
+  }
 }
 
 #wedding {
@@ -165,7 +184,7 @@ hr {
   height: 298px;
   box-sizing: content-box;
   overflow: hidden;
-  clear:both;
+  clear: both;
 }
 
 .wedding {
@@ -228,13 +247,33 @@ footer .ball {
 
 /*info day page*/
 
-#info {
-  width: 75%;
-  margin: 0 auto;
-  padding: 50px 20px;
-  color: #2c3942;
+@blueColor: #8fbac6;
+
+blockquote {
+  font-style: italic;
   font-family: 'Neuton', serif;
 
-  word-spacing: 1px;
 }
 
+body.info {
+  main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 20px;
+    font-family: 'Neuton', serif;
+
+    word-spacing: 1px;
+
+    .text-container {
+      width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  footer {
+    background-color: #fff;
+    color: @blueColor;
+  }
+
+}
