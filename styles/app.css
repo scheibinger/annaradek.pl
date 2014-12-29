@@ -221,7 +221,7 @@ body.info main {
   word-spacing: 1px;
 }
 body.info main .text-container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
